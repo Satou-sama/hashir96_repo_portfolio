@@ -22,16 +22,10 @@
   --ff-secondary: "Open Sans", sans-serif;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
 }
 
 body {
     background-color: #ebebeb;
-  }
-
-  .selectedHero
-  {
-    color: rgb(92, 92, 92);
   }
 
   .header {
@@ -43,6 +37,13 @@ body {
     font-family: Arial;
     font-size: 1.1rem;
   }
+
+  .other-links {
+    font-family: Arial;
+    font-size: 1.2rem;
+    line-height: 27px;
+  }
+
   nav {
     background: var(--clr-white);
     height: 5rem;
