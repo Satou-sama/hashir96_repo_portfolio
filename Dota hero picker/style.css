@@ -1,8 +1,27 @@
 body {
-    background-color: #efefef;
+  background-color: #ebebeb;
+  }
+
+  .container{
+    margin-top: 2.2em;
   }
 
   .selectedHero
   {
-    color: rgb(92, 92, 92);
+    color: #5c5c5c;
   }
+
+  .btn-hero{
+    margin-top: 5px;
+    height:35px;
+    width:150px;
+    font-size: 14px;
+    background-color: #dbdbdb;
+  }
+
+.btn-hero:hover {background-color: #dedede}
+
+.btn-hero:active {
+  background-color: #adadad;
+  transform: translateY(2px);
+}

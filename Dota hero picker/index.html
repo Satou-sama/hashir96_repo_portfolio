@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="description" content="Randomly selects a DotA 2 hero out of the 126 available heroes in the game including Kez.">
     <title>Random Dota 2 Hero Picker</title>
+        <!-- GA4 -->
+        <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-SWE29L9XL0"></script>
+      <script>
+       window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-SWE29L9XL0');
+      </script>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="container" align="center">
         <h1>Random Hero Picker</h1>
-        <h2>Hero: <span class="selectedHero"></span></h2>
-        <button class="btn btn-hero" id="btn">Randomize Hero</button>
+        <p style="font-size: 18px;">Randomly picks a DotA 2 hero for you from the pool of 126 available heroes.</p>
+        <h2 style="margin-top: 40px;">Hero: <span class="selectedHero"></span></h2>
+        <button class="btn-hero" id="btn">Randomize Hero</button>
       </div>
 
 
