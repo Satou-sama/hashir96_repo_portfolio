@@ -20,4 +20,3 @@ btn.addEventListener("click", function () {
 //   console.log(randomNumber);
   selectedHero.textContent = randomNumber.localized_name;
 });
-

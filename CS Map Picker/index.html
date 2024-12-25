@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="description" content="Randomly selects a Counter-Strike map from the competitive pool or the premier mode maps.">
+    <title>Counter-Strike 2 Map Picker</title>
+        <!-- GA4 -->
+        <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-SWE29L9XL0"></script>
+      <script>
+       window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-SWE29L9XL0');
+      </script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container" align="center">
+        <h1>Counter-Strike 2 Map Picker</h1>
+        <p style="font-size: 18px;">Randomly picks a map for you from the either the Active Duty pool or the competitive pool.</p>
+        <div class="row">
+          <div class="column">
+            <h2>Active duty pool</h2>
+            <p style="font-size: 18px;">Pick a map from the Active Duty pool (Premier Mode).</p>
+            <img id="active-img" class="image-box" src="./img/placeholder.png">
+        <h2 style="margin-top: 40px;">Map: <span class="selectedActive"></span></h2>
+        <button class="btn-randomMap" id="btn-active">Randomize Map</button>
+            </div>
+            
+            <div class="column">
+              <h2>Competitive Map pool</h2>
+              <p style="font-size: 18px;">Pick a map from the Competitive Map pool.</p>
+              <img id="map-img" class="image-box" src="./img/placeholder.png">
+              <h2 style="margin-top: 40px;">Map: <span class="selectedMap"></span></h2>
+              <button class="btn-randomMap" id="btn-map">Randomize Map</button>
+                  </div>
+        </div>
+      </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
