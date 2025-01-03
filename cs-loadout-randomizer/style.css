@@ -94,11 +94,6 @@ span{
   transform: translateY(2px);
 }
 
-.column {
-  float: left;
-  width: 50%;
-}
-
 .table-column {
   float: left;
   width: 33%;
@@ -113,9 +108,30 @@ span{
 
 .image-box
 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /* width: 800px; */
-  max-height: 120px;
+  margin: auto;
+  width: 200px;
+}
+
+/* DipShit was here */
+.penisInspector{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+.LoadOutWasTaken{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.LoadOutWasTaken div{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  
+}
+
+.LoadOutWasTaken div img{
+  
 }

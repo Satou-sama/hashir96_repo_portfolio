@@ -34,169 +34,88 @@
     <div class="container" align="center">
         <h1>Counter-Strike 2 Loadout Randomizer</h1>
         <p style="font-size: 18px;">Randomizes the loadout for you to use in Counter-Strike 2.</p>
-        <div class="row">
-          <div class="column">
-            <h2>CT Side Loadout</h2>
-            <p style="font-size: 18px;">Randomize the whole CT side loadout or by tier individually</p>
-            
-            <button class="btn-randomMap" id="btn-ctLoadout" style="width: 250px">Randomize Entire Loadout</button>
-            <div align="center" style="align-items: center; display: flex; margin-top: 50px;">
-              
-            <table>
-              <tr>
-              <th>
+          <div class="penisInspector">
+            <div class="LoadOutWasTaken">
+              <div>
+                <h2>CT Side Loadout</h2>
+                <p style="font-size: 18px;">Randomize the whole CT side loadout or by tier individually</p>
+                <button class="btn-randomMap" id="btn-ctLoadout" style="width: 250px">Randomize Entire Loadout</button>
+              </div>
+              <div>
                 <button class="btn-randomMap" id="btn-ctPistol">Randomize Pistol</button>
                 <h2 style="margin-top: 40px;">Pistols: <span class="selectedMap"></span></h2>
-              </th>
-            </tr>
-              <tr>
-                <td><img id="img-ctstart" class="image-box" src="./img/placeholder.png"><span class="CTstart"></span></td>
-              </tr>
-              <tr>
-                <td><img id="img-ctp1" class="image-box" src="./img/placeholder.png"><span class="ctP1"></span></td>
-              </tr>
-              <tr>
-                <td><img id="img-ctp2" class="image-box" src="./img/placeholder.png"><span class="ctP2"></span></td>
-              </tr>
-              <tr>
-                <td><img id="img-ctp3" class="image-box" src="./img/placeholder.png"><span class="ctP3"></span></td>
-              </tr>
-              <tr>
-                <td><img id="img-ctp4" class="image-box" src="./img/placeholder.png"><span class="ctP4"></span></td>
-              </tr>
-              </table>
-              <table>
-                <tr>
-                  <th>
-                    <button class="btn-randomMap" id="btn-ctMid">Randomize Mid Tier</button>
+              </div>
+              <div class="ctPistol">
+                <img id="img-ctstart" class="image-box" src="./img/placeholder.png"><span class="CTstart"></span>
+                <img id="img-ctp1" class="image-box" src="./img/placeholder.png"><span class="ctP1"></span>
+                <img id="img-ctp2" class="image-box" src="./img/placeholder.png"><span class="ctP2"></span>
+                <img id="img-ctp3" class="image-box" src="./img/placeholder.png"><span class="ctP3"></span>
+                <img id="img-ctp4" class="image-box" src="./img/placeholder.png"><span class="ctP4"></span>
+              </div>
+              <div>
+                <button class="btn-randomMap" id="btn-ctMid">Randomize Mid Tier</button>
                 <h2 style="margin-top: 40px;">Mid Tier:</h2>
-              </th>
-            </tr>
-            <tr>
-              <td><img id="img-ctMid1" class="image-box" src="./img/placeholder.png"><span class="ctMid1"></span></td>
-            </tr>
-            <tr>
-              <td><img id="img-ctMid2" class="image-box" src="./img/placeholder.png"><span class="ctMid2"></span></td>
-            </tr>
-            <tr>
-              <td><img id="img-ctMid3" class="image-box" src="./img/placeholder.png"><span class="ctMid3"></span></td>
-            </tr>
-            <tr>
-              <td><img id="img-ctMid4" class="image-box" src="./img/placeholder.png"><span class="ctMid4"></span></td>
-            </tr>
-            <tr>
-              <td><img id="img-ctMid5" class="image-box" src="./img/placeholder.png"><span class="ctMid5"></span></td>
-            </tr>
-            </table>
-            <table>
-              <tr>
-                <th>
-                  <button class="btn-randomMap" id="btn-ctRifle">Randomize Rifles</button>
+              </div>
+              <div>
+                <img id="img-ctMid1" class="image-box" src="./img/placeholder.png"><span class="ctMid1"></span>
+                <img id="img-ctMid2" class="image-box" src="./img/placeholder.png"><span class="ctMid2"></span>
+                <img id="img-ctMid3" class="image-box" src="./img/placeholder.png"><span class="ctMid3"></span>
+                <img id="img-ctMid4" class="image-box" src="./img/placeholder.png"><span class="ctMid4"></span>
+                <img id="img-ctMid5" class="image-box" src="./img/placeholder.png"><span class="ctMid5"></span>
+              </div>
+              <div>
+                <button class="btn-randomMap" id="btn-ctRifle">Randomize Rifles</button>
                 <h2 style="margin-top: 40px;">Rifles</h2>
-              </th>
-            </tr>
-            <tr>
-              <td><img id="img-ctRifle1" class="image-box" src="./img/placeholder.png"><span class="ctRifle1"></span></td>
-            </tr>
-            <tr>
-              <td><img id="img-ctRifle2" class="image-box" src="./img/placeholder.png"><span class="ctRifle2"></span></td>
-            </tr>
-            <tr>
-              <td><img id="img-ctRifle3" class="image-box" src="./img/placeholder.png"><span class="ctRifle3"></span></td>
-            </tr>
-            <tr>
-              <td><img id="img-ctRifle4" class="image-box" src="./img/placeholder.png"><span class="ctRifle4"></span></td>
-            </tr>
-            <tr>
-              <td><img id="img-ctRifle5" class="image-box" src="./img/placeholder.png"><span class="ctRifle5"></span></td>
-            </tr>
-          </table>
-          </div>
-                </div>
-                
-          <div class="column">
-            <h2>T Side Loadout</h2>
-            <p style="font-size: 18px;">Randomize the whole T side loadout or by tier individually.</p>
-            <button class="btn-randomMap" id="btn-TLoadout"  style="width: 250px">Randomize Entire Loadout</button>
-            
-        
-        <div align="center" style="align-items: center; display: flex; margin-top: 50px;">
-          <table>
-            <tr>
-            <th>
-              <button class="btn-randomMap" id="btn-tPistol">Randomize Pistols</button>
-              <h2 style="margin-top: 40px;">Pistols:</h2>
-            </th>
-          </tr>
-            <tr>
-              <td><img id="img-Tstart" class="image-box" src="./img/glock-18.webp"><span class="Tstart">Glock-18</span></td>
-              
-            </tr>
-            <tr>
-              <td><img id="img-tP1" class="image-box" src="./img/placeholder.png"><span class="tP1"></span></td>
-            </tr>
-            <tr>
-              <td><img id="img-tP2" class="image-box" src="./img/placeholder.png"><span class="tP2"></span></td>
-            </tr>
-            <tr>
-              <td><img id="img-tP3" class="image-box" src="./img/placeholder.png"><span class="tP3"></span></td>
-            </tr>
-            <tr>
-              <td><img id="img-tP4" class="image-box" src="./img/placeholder.png"><span class="tP4"></span></td>
-            </tr>
-            </table>
-            <table>
-              <tr>
-                <th>
-                  <button class="btn-randomMap" id="btn-tMid">Randomize Mid Tier</button>
-              <h2 style="margin-top: 40px;">Mid Tier:</h2>
-            </th>
-          </tr>
-          <tr>
-            <td><img id="img-tMid1" class="image-box" src="./img/placeholder.png"><span class="tMid1"></span></td>
-          </tr>
-          <tr>
-            <td><img id="img-tMid2" class="image-box" src="./img/placeholder.png"><span class="tMid2"></span></td>
-          </tr>
-          <tr>
-            <td><img id="img-tMid3" class="image-box" src="./img/placeholder.png"><span class="tMid3"></span></td>
-          </tr>
-          <tr>
-            <td><img id="img-tMid4" class="image-box" src="./img/placeholder.png"><span class="tMid4"></span></td>
-          </tr>
-          <tr>
-            <td><img id="img-tMid5" class="image-box" src="./img/placeholder.png"><span class="tMid5"></span></td>
-          </tr>
-          </table>
-          <table>
-            <tr>
-              <th>
-                <button class="btn-randomMap" id="btn-tRifle">Randomize Rifles</button>
-              <h2 style="margin-top: 40px;">Rifles</h2>
-            </th>
-          </tr>
-          <tr>
-            <td><img id="img-tRifle1" class="image-box" src="./img/placeholder.png"><span class="tRifle1"></span></td>
-          </tr>
-          <tr>
-            <td><img id="img-tRifle2" class="image-box" src="./img/placeholder.png"><span class="tRifle2"></span></td>
-          </tr>
-          <tr>
-            <td><img id="img-tRifle3" class="image-box" src="./img/placeholder.png"><span class="tRifle3"></span></td>
-          </tr>
-          <tr>
-            <td><img id="img-tRifle4" class="image-box" src="./img/placeholder.png"><span class="tRifle4"></span></td>
-          </tr>
-          <tr>
-            <td><img id="img-tRifle5" class="image-box" src="./img/placeholder.png"><span class="tRifle5"></span></td>
-          </tr>
-        </table>
-      </div>
+              </div>
+              <div>
+                <img id="img-ctRifle1" class="image-box" src="./img/placeholder.png"><span class="ctRifle1"></span>
+                <img id="img-ctRifle2" class="image-box" src="./img/placeholder.png"><span class="ctRifle2"></span>
+                <img id="img-ctRifle3" class="image-box" src="./img/placeholder.png"><span class="ctRifle3"></span>
+                <img id="img-ctRifle4" class="image-box" src="./img/placeholder.png"><span class="ctRifle4"></span>
+                <img id="img-ctRifle5" class="image-box" src="./img/placeholder.png"><span class="ctRifle5"></span>
+              </div>
             </div>
-            
-        </div>
-      </div>
-      
-    <script type="module" src="index.js"></script>
+            <div class="LoadOutWasTaken">
+              <div>
+                <h2>T Side Loadout</h2>
+                <p style="font-size: 18px;">Randomize the whole T side loadout or by tier individually.</p>
+                <button class="btn-randomMap" id="btn-TLoadout"  style="width: 250px">Randomize Entire Loadout</button></div>
+              <div>
+                <button class="btn-randomMap" id="btn-tPistol">Randomize Pistols</button>
+                <h2 style="margin-top: 40px;">Pistols:</h2>
+              </div>
+              <div>
+                <img id="img-Tstart" class="image-box" src="./img/glock-18.webp"><span class="Tstart">Glock-18</span>
+                <img id="img-tP1" class="image-box" src="./img/placeholder.png"><span class="tP1"></span>
+                <img id="img-tP2" class="image-box" src="./img/placeholder.png"><span class="tP2"></span>
+                <img id="img-tP3" class="image-box" src="./img/placeholder.png"><span class="tP3"></span>
+                <img id="img-tP4" class="image-box" src="./img/placeholder.png"><span class="tP4"></span>
+              </div>
+              <div>
+                <button class="btn-randomMap" id="btn-tMid">Randomize Mid Tier</button>
+                <h2 style="margin-top: 40px;">Mid Tier:</h2>
+              </div>
+              <div>
+                <img id="img-tMid1" class="image-box" src="./img/placeholder.png"><span class="tMid1"></span>
+                <img id="img-tMid2" class="image-box" src="./img/placeholder.png"><span class="tMid2"></span>
+                <img id="img-tMid3" class="image-box" src="./img/placeholder.png"><span class="tMid3"></span>
+                <img id="img-tMid4" class="image-box" src="./img/placeholder.png"><span class="tMid4"></span>
+                <img id="img-tMid5" class="image-box" src="./img/placeholder.png"><span class="tMid5"></span>
+              </div>
+              <div>
+                <button class="btn-randomMap" id="btn-tRifle">Randomize Rifles</button>
+                <h2 style="margin-top: 40px;">Rifles</h2>
+              </div>
+              <div>
+                <img id="img-tRifle1" class="image-box" src="./img/placeholder.png"><span class="tRifle1"></span>
+                <img id="img-tRifle2" class="image-box" src="./img/placeholder.png"><span class="tRifle2"></span>
+                <img id="img-tRifle3" class="image-box" src="./img/placeholder.png"><span class="tRifle3"></span>
+                <img id="img-tRifle4" class="image-box" src="./img/placeholder.png"><span class="tRifle4"></span>
+                <img id="img-tRifle5" class="image-box" src="./img/placeholder.png"><span class="tRifle5"></span>
+              </div>
+            </div>
+          </div>
+    </div>
+      <script type="module" src="index.js"></script>
 </body>
 </html>
